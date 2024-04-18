@@ -4,7 +4,8 @@ const router = express.Router();
 
 const lotrController = require('../controllers/lotr-controller');
 
-router.get("books", lotrController.getBooks)
+router.get("/books", lotrController.getBooks)
 
+router.get("/movies", lotrController.getMovies)
 
 module.exports = router;
