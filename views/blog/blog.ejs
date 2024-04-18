@@ -1,0 +1,41 @@
+<div id="section">
+    <% blogPosts.forEach(blogPost => { %>
+     
+    
+    <div class="section">
+        <div>
+            <div> <a href="/blog/<%= blogPost.slug %>"><img src="/images/<%= blogPost.image %>" width="169" height="163" alt=""></a>
+                <h2><a href="/blog/<%= blogPost.slug %>"><%= blogPost.title %></a></h2>
+                <h3>Posted by <a href="/blog/user/<%= blogPost.user._id%>"> <%= blogPost.user.firstname %> </a> in</h3>
+                <% blogPost.categories.forEach(category => { %>
+                    <a href="/blog/category/<%= category.slug %>"><span><%= category.name %></span></a>
+                <% }) %>
+                
+                <p>
+                    <%= blogPost.first50 %>
+                </p>
+                <a href="/blog/<%= blogPost.slug %>" class="price"><%= blogPost.monthAbbreviation %> <span><%= blogPost.dayNumber %></span></a> </div>
+        </div>
+    </div>
+    <% }) %>
+
+</div>
+<div class="sidebar">
+    <h1>Recent Posts</h1>
+    <ul>
+        <% blogPosts.slice(0,5).forEach((blogPost, index) => { %>
+            <li class=<%= index === 0 ? "first" : "" %>>
+                <a href="/blog/<%= blogPost.slug %>"><%= blogPost.title %></a>
+            </li>
+        <% }) %>
+        
+    </ul>
+    <h1>Categories</h1>
+    <ul>
+        <% blogPostCategories.forEach((category, index) => { %>
+            <li class=<%= index === 0 ? "first" : "" %>>
+                <a href="/blog/category/<%= category.slug %>"><%= category.name %></a>
+            </li>
+        <% }) %>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Delicious Breakfast Recipes",
+      "content": "Start your day with a delicious breakfast! Whether you prefer pancakes, waffles, or a hearty omelette, we've got you covered. Our breakfast recipes are easy to make and perfect for the whole family. Dive into a stack of fluffy blueberry pancakes, drizzled with maple syrup and topped with fresh berries. Or try our savory breakfast burritos, packed with scrambled eggs, cheese, and your choice of fillings. Don't forget to pair your meal with a steaming cup of coffee or freshly squeezed orange juice. With our breakfast recipes, mornings have never tasted better!",
+      "image": "breakfast3.jpg",
+      "user": "6605a1cbefffed19b64c099d",
+      "categories": ["66155221ba32f9539b9d60ac", "66155221ba32f9539b9d60b1"],
+      "date": "2024-04-08T12:00:00Z"
+    },
+    {
+      "title": "Quick and Healthy Lunch Ideas",
+      "content": "Looking for quick and healthy lunch ideas? Look no further! From fresh salads to satisfying sandwiches, we've got plenty of options to keep you energized throughout the day. Try our delicious quinoa salad, packed with protein-rich ingredients like chickpeas, avocado, and grilled chicken. Or whip up a tasty veggie wrap, filled with crunchy vegetables and creamy hummus. Need something heartier? Our turkey and avocado club sandwich is sure to hit the spot. Whatever your taste buds are craving, we've got the perfect lunch recipe for you!",
+      "image": "breakfast3.jpg",
+      "user": "6605a1cbefffed19b64c099d",
+      "categories": ["66155221ba32f9539b9d60ad", "66155221ba32f9539b9d60b2"],
+      "date": "2024-04-09T12:00:00Z"
+    },
+    {
+      "title": "Dinner Party Favorites",
+      "content": "Planning a dinner party? Impress your guests with our delicious dinner party favorites! From elegant appetizers to decadent desserts, we've got everything you need to host a memorable evening. Start off with our crowd-pleasing spinach and artichoke dip, served warm with crispy tortilla chips. Then, move on to our mouthwatering main courses, like tender braised short ribs or creamy mushroom risotto. And don't forget dessert! Treat your guests to our indulgent chocolate lava cakes, oozing with rich molten chocolate. With our dinner party recipes, you'll be the host with the most!",
+      "image": "shakes2.jpg",
+      "user": "6605a1cbefffed19b64c099d",
+      "categories": ["66155221ba32f9539b9d60ae", "66155221ba32f9539b9d60af", "66155221ba32f9539b9d60b3"],
+      "date": "2024-04-10T12:00:00Z"
+    }
+  ]

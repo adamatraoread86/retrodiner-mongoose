@@ -1,0 +1,21 @@
+
+<div class="content">
+
+    <div>
+        <div>
+            <h1><%= category.catName %></h1>
+            <div> <a href="burger.html"><img src="<%= item.itemImage %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+               
+                    <li class="last">
+                        <h2><%= item.itemName %></h2>
+                        <p>
+                            <%= item.itemDescription %>
+                        </p>
+                        <span class="price">$<%= item.itemPrice %></span>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('partials/sidemenu') %>

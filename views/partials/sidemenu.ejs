@@ -1,0 +1,11 @@
+
+<div class="sidebar">
+    <h1>Menu</h1>
+    <ul class="navigation">
+        <% categories.forEach((cat, index) => { %>
+            <li class="<%= index === 0 ? "first" : "" %>">
+                <a class="<%= cat.catId === category.catId ? "active" : "" %>" href="/menu/<%= cat.catSlug %>"><%= cat.catName %></a>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="burger.html" class="download">&nbsp;</a> </div>

@@ -1,0 +1,37 @@
+<div class="content">
+  <div>
+    <div>
+      <h1>Log In</h1>
+
+      <h4>Log in to your Retro Diner account!</h4>
+
+      <%- include('../partials/formfeedback') %>
+
+      <form action="/auth/login" method="POST">
+        <label for="email">
+          <span>E-mail:</span>
+          <input type="email" name="email" id="email" value="<%= locals.entries && locals.entries.email %>" />
+        </label>
+        <label for="password">
+          <span>Password:</span>
+          <input type="password" name="password" id="password" value="<%= locals.entries && locals.entries.password %>" />
+        </label>
+        <input type="submit" value="" />
+        <p><a href="/auth/signup" >New here?  Create an account!</a></p>
+        
+      </form>
+    </div>
+  </div>
+</div>
+<div class="sidebar">
+  <h1>Open Everyday</h1>
+  <span>including holidays</span> <span>from 8AM until 1AM</span>
+  <h1>Address</h1>
+  <span>Retro Diner Restaurant</span> <span>2281 Ash Street</span>
+  <span>Dallas, TX 75212</span>
+  <h1>Phone Number</h1>
+  <span>972-879-4317</span>
+  <h1>Open Everyday</h1>
+  <span>including holidays</span> <span>from 8AM until 1AM</span>
+  <a href="breakfast.html" class="download">&nbsp;</a>
+</div>

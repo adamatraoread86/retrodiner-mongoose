@@ -1,0 +1,29 @@
+<% 
+// Destructure components of menu object
+// const {category, image, items} = data; 
+
+%>
+
+<div class="content">
+
+    <div>
+        <div>
+            <h1><%= category.catName %></h1>
+            <div> <a href="/menu/<%= category.catId %>/items"><img src="/images/<%= category.catImage %>" width="434" height="288" alt=""></a> </div>
+            <ul>
+                <% items.forEach((item, index) => { %>
+                    <li class="<%= index === items.length - 1 ? "last" : "" %>">
+                        <h2><a href="/menu/<%= category.catSlug %>/<%= item.itemSlug %>"><%= item.itemName %></a></h2>
+                        <p>
+                            <%= item.itemDescription %>
+                        </p>
+                        <span class="price">$<%= item.itemPrice %></span>
+                    </li>
+                <% }) %>
+               
+
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('partials/sidemenu') %>

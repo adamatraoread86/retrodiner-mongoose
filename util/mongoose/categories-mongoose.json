@@ -1,0 +1,22 @@
+[
+    {
+        "catName": "burgers",
+        "catImage": "burger.jpg",
+        "items": []
+    },
+    {
+        "catName": "hotdogs",
+        "catImage": "hotdog.jpg",
+        "items": []
+    },
+    {
+        "catName": "shakes",
+        "catImage": "shake.jpg",
+        "items": []
+    },
+    {
+        "catName": "breakfast",
+        "catImage": "breakfast2.jpg",
+        "items": []
+    }
+]
