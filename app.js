@@ -20,7 +20,7 @@ const homeRouter = require('./routes/home-routes');
 const authRouter = require('./routes/auth-routes');
 const apiRouter = require("./routes/api-routes");
 const blogRouter = require("./routes/blog-routes");
-
+const lotrRouter = require("./routes/lotr-routes")
 // Database connection string
 const MONGODB_URI =  `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.qb2hoxm.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
 
@@ -83,7 +83,7 @@ app.use("/auth", authRouter);
 
 // Mount middleware for api routes
 app.use("/api", apiRouter);
-
+app.use("/lotr", lotrRouter);
 // Mount middleware for home routes
 app.use(homeRouter);
 
