@@ -96,11 +96,14 @@ app.use(errorController.get500);
 
 
 // First connect to database server, then launch app.
-mongoose.connect(MONGODB_URI)
-.then(() => {
-    // Launch the app
-    app.listen(3000);
+mongoose
+.connect(MONGODB_URI)
+.then((result) => {
+ app.listen(process.env.PORT || 3000)
 })
+.catch((err) => {
+  console.log(err);
+});
 
 
 
