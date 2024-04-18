@@ -6,7 +6,7 @@ const lotrController = require('../controllers/lotr-controller');
 
 router.get("/books", lotrController.getBooks);
 
-router.get("/movies", lotrController.getMovies);
+router.get("/movies", lotrController.getMovies, lotrController.renderMovies);
 
 router.get("/characters", lotrController.getCharacters);
 

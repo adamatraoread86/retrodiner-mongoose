@@ -23,10 +23,19 @@ exports.getMovies = async (req, res, next) => {
             Authorization: "Bearer "+ lotrKey
         }
     });
-    res.status(200).json(response.data);
+    //res.status(200).json(response.data);
+    res.locals.data = {}
+    res.locals.data.movies = response.data.docs;
+    next();
 }
 
 exports.getCharacters = async (req, res, next) => {
     const response = await lotrAxios.get("/characters")
     res.status(200).json(response.data);
 }
+
+exports.renderMovies = (req, res, next) =>{
+    const {movies} = res.locals.data;
+    res.render("lotr/movies", {pageTitle:"lotr movies", movies: movies});
+}
+
